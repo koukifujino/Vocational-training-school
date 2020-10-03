@@ -1,0 +1,251 @@
+@charset "utf-8";
+@import url("common.css");
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+/* CSS Document */
+* {
+	margin:0;
+	padding:0;
+}
+img {
+	max-width:100%;
+	height:auto;
+}
+body {
+	background-color:#FFC;
+	color:#5f5039;
+}
+header, nav, #breadcrumb, #contents, footer {
+	width:840px;
+	margin-left:auto;
+	margin-right:auto;
+}
+header h1 {
+	margin:0 0 26px 0;
+	padding-top:28px;
+	text-align:center;
+}
+nav ul {
+	list-style-type:none;
+	margin:0 0 20px 0;
+	padding-left:0;
+	overflow:hidden;
+}
+nav ul li {
+	width:210px;
+	float:left;
+}
+nav ul li a {
+	display:block;
+	height:0;
+	padding-top:44px;
+	overflow:hidden;
+}
+nav ul li#nav_concept a {
+	background-image:url(../images/nav1.jpg);
+}
+nav ul li#nav_plan a {
+	background-image:url(../images/nav2.jpg);
+}
+nav ul li#nav_fair a {
+	background-image:url(../images/nav3.jpg);
+}
+nav ul li#nav_contact a {
+	background-image:url(../images/nav4.png);
+}
+#main {
+	width:570px;
+}
+bun p {
+	margin:20;
+	padding:20;
+}
+#main .right {
+	width:60px;
+	background-color:#f00;
+	color:#FFFFFF;
+	position:relative;
+	position:absolute;
+	font-size:20px;
+}
+.image {
+	margin:20px 0 0 0;
+}
+.image p {
+	margin-bottom:20px;
+}
+#sub {
+	width:230px;/*float:left;*/
+}
+.bnr {
+	width:230px;
+	height:135px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+	position:relative;
+}
+.bnr_inner a {
+	display:block;
+	position:relative;
+}
+.bnr:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: rgba(126,50,50,.3);
+}
+.bnr a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:100%;
+	color:#FFF;
+	font-size:18px;
+}
+#bnr1 {
+	background-image:url(../images/sub1.jpg);
+}
+#bnr2 {
+	background-image:url(../images/sub2.jpg);
+	color:#FFF;
+}
+#bnr3 {
+	background-image:url(../images/sub3.jpg);
+	color:#FFF;
+}
+#bnr4 {
+	background-image:url(../images/sub4.jpg);
+	color:#FFFFFF;
+}
+footer {
+	padding-top:70px;
+}
+#main h1 {
+	background-image:url(../images/bg_h1_head.png), url(../images/bg_h1_bottom.png);
+	background-repeat:no-repeat, no-repeat;
+	background-position:left top, left bottom;
+	margin-bottom:60px;
+}
+#concept #nav_concept a, #plan #nav_plan a, #fair #nav_fair a, #contact #nav_contact a, nav ul li a:hover {
+	background-position:0 -45px;
+}
+/*-index.html-*/
+#news ul {
+	list-style-type:none;
+	padding-right:0;
+}
+#news ul li {
+	padding:20px 0 20px 175px;
+	border-bottom:1px dotted #6c5f45;
+	color:#342300;
+	text-indent:-175px;
+}
+/*-会社案内-*/
+table {
+	width:70%;
+}
+table thead tr th {
+	background-color:#eee8cc;
+}
+table tbody tr:nth-child(odd) {
+	background-color:#ffffff;
+}
+.ningyou {
+	background-image: url(../images/images/ningyou1_03.gif);
+}
+.ninngyou {
+	background-image: url(../images/images/ningyou2_05.gif);
+	background-repeat:repeat-y;
+}
+.gallery_box figure {
+	width:130px;
+	float:left;
+	position:relative;
+	overflow:hidden;
+}
+.gallery_box figure:first-child {
+	margin-left:0;
+}
+.concept_box {
+	margin-bottom:30px;
+	overflow:hidden;
+}
+.concept_box:last-child {
+	margin-bottom:0;
+}
+input[type="text"] {
+	width:200px;
+}
+input[type="email"] {
+	width:300px;
+}
+/*オンライン予約*/
+.aikon {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+.onlain {
+	width:260px;
+}
+.onlain table {
+	width:100%;
+}
+.onlain table th, .onlain table td {
+	padding: 5px;
+}
+.onlain td {
+	color:#FF0000;
+	text-align:center;
+	background-color:#FFF;
+}
+.onlain th {
+	background-color:#f2f2f2;
+	white-space: nowrap;
+}
+.onlain p {
+	color:#FF0000;
+	padding-bottom:45px;
+}
+.onlain input[type="text"] {
+	width:100px;
+}
+.onlain input[type="submit"] {
+	background-color:#F00;
+	color:#FFF;
+	border-radius: 8px;
+}
+.onlain p img {
+	vertical-align: -8px;
+}
+.kurukuru {
+	display: inline-block;
+	width: 200px;
+	transition: 2s;/* 2秒かけて動く */
+}
+.kurukuru:hover {
+	transform: rotateY(360deg) scale(2); /* マウスオーバー時に回転 */
+}
+/*拡大*/
+.kakudai h2 {
+	background-color:#FFC;
+	color:#333333;
+	font-size:24px;
+}
+.kakudai p {
+	background-color:#FFFFCC;
+	color:#333333;
+	font-size:18px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.lightgallery{
+	max-width:840px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	}
